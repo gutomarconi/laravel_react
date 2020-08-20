@@ -3,20 +3,32 @@
 Simple Laravel API to manage orders, accounts and products.
 Frontend in ReactJS with a simple react bootstrap table to list orders and a action to delete an order.
 
+## Requirements
+* PHP 
+* MySQL
+* Composer
+* NPM
+
 ## Setup
 
 * Clone this repository
 * Create MySQL database named 'laravel_react'
 * In the repository root folder, rename the .env.example file to .env
 * Update .env file at the repository root folder to configure DB_HOST, DB_DATABASE, DB_USERNAME and DB_PASSWORD with your respective information
-* In the repository root folder, run "composer install".
-* In the client folder, run "npm install".
-* In the client folder, run "npm run start".
-* In the repository root folder, run "composer start".
+
+Open one terminal, navigate to the repository root folder and:
+* run "composer install".
+* run "composer start".
+* When finished, a message about server being running at 127.0.0.1:8000 will be displayed.
+
+Open one more terminal, navigate to the repository root folder and then into the client folder and:
+* run "npm install".
+* run "npm run start".
+* When finished, a message about server being running at localhost:3000 will be displayed.
 
 The server will be up and running at address http://127.0.0.1:8000.
     
-    Can use Postman or any other tool to test the endpoints 
+    Postman or any other tool can be used to test the endpoints 
 The frontend will running at address http://localhost:3000.
     
     Access this address through a browser to access the app.
