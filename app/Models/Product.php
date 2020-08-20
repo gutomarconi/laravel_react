@@ -21,7 +21,7 @@ class Product extends Model
      *
      * @var string
      */
-    protected $table = 'product';
+    protected $table = 'products';
 
     /**
      * The primary key associated with the table.

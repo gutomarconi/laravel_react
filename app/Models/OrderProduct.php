@@ -23,7 +23,7 @@ class OrderProduct extends Model
      *
      * @var string
      */
-    protected $table = 'orderproduct';
+    protected $table = 'order_products';
 
     /**
      * The primary key associated with the table.
@@ -31,6 +31,13 @@ class OrderProduct extends Model
      * @var string
      */
     protected $primaryKey = 'uuid';
+
+    protected $fillable = [
+        'product_uuid',
+        'rental_fee',
+        'install_fee',
+        'total',
+    ];
 
     /**
      * OrderProduct - Product relationship where a order product has one product
@@ -49,6 +56,6 @@ class OrderProduct extends Model
      */
     public function order(): BelongsTo
     {
-        return $this->belongsTo(Order::class, 'uuid', 'order_uuid');
+        return $this->belongsTo(Order::class);
     }
 }

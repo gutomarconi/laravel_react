@@ -17,6 +17,7 @@ class CreateOrdersTable extends Migration
             $table->uuid('uuid')->primary();
             $table->timestamps();
             $table->enum('status', ['Under review', 'In progress', 'Completed']);
+            $table->float('total')->default(0);
             $table->uuid('account_uuid')->index('account_order_idx');
             $table->foreign('account_uuid', 'account_order_fk')
                 ->references('uuid')

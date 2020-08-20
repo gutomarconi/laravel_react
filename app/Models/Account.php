@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Models\{Concerns\UsesUuid};
+use App\Models\Concerns\UsesUuid;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
@@ -22,7 +22,7 @@ class Account extends Model
      *
      * @var string
      */
-    protected $table = 'account';
+    protected $table = 'accounts';
 
     /**
      * The primary key associated with the table.

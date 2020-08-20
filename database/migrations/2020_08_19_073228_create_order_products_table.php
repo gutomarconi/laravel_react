@@ -18,12 +18,15 @@ class CreateOrderProductsTable extends Migration
             $table->timestamps();
             $table->uuid('order_uuid')->index('orderproduct_order_idx');
             $table->uuid('product_uuid')->index('orderproduct_product_idx');
+            $table->float('install_fee');
+            $table->float('rental_fee');
+            $table->float('total');
             $table->foreign('order_uuid', 'orderproduct_order_fk')
                 ->references('uuid')
                 ->on('orders')
                 ->onUpdate('NO ACTION')
-                ->onDelete('RESTRICT');
-            $table->foreign('product_uuid', 'orderproduct_product_fj=k')
+                ->onDelete('cascade');
+            $table->foreign('product_uuid', 'orderproduct_product_fk')
                 ->references('uuid')
                 ->on('products')
                 ->onUpdate('NO ACTION')
