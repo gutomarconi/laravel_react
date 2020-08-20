@@ -2,9 +2,9 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://127.0.0.1",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.54",
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^9.5.0",
     "@types/react-redux": "^7.1.9",
     "redux": "latest",
     "redux-thunk": "latest"
