@@ -37,13 +37,17 @@ The database will be seeded with 1 account and 50 orders with products.
 ## Endpoints
 
 /GET /api/products - List all products
+
 /GET /api/products/{uuid} - Get a product by the given uuid
 
 /GET /api/accounts - List all accounts
+
 /GET /api/accounts/{uuid} - Get a account by the given uuid
 
 /GET /api/orders - List all orders
+
 /GET /api/orders/{uuid} - Get a order by the given uuid
+
 /POST /api/orders - Create a new order
 	
 	parameters (form data urlencoded):
